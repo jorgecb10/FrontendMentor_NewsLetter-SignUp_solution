@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../src/assets/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../src/assets/fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+.contenedor {
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+}
+body {
+    @apply font-roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1024px) {
+    .main__contenido {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.boton {
+    background: hsl(234, 29%, 20%);
+}
+.boton:hover {
+    background: linear-gradient(90deg, rgb(2,0,36) 0%, rgb(254,83,120) 0%, rgb(255,96,62) 100%);
+    box-shadow: 0px 10px 20px -5px rgb(255,96,62);
+    transition: background .2s ease-in-out, 
+                box-shadow .2s ease-in-out;
+}
+.alerta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255,96,62);
+}

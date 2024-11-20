@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="md:bg-charcoal-grey">
+  <main class="main md:grid md:grid-cols-2 md:items-center md:gap-20 md:bg-white md:py-5 md:pr-5 md:pl-5 md:rounded-xl lg:pl-20">
+    <div class="order-2">
+      <picture>
+        <source
+          media="(min-width: 768px)" 
+          srcset="src/assets/images/illustration-sign-up-desktop.svg" 
+          type="image/svg+xml">
+        <img loading="lazy" decoding="async" src="src/assets/images/illustration-sign-up-mobile.svg" alt="imagen" class="imagen-singup w-full">
+      </picture>
+    </div>
+
+    <div class="main__contenido">
+      <h1 class="text-3xl font-bold my-7 md:text-5xl">Stay updated!</h1>
+      <p class="my-3">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <div >
+        <div class="flex self-start gap-3">
+          <img src="src/assets/images/icon-list.svg" alt="icono-lista" class="self-start">
+          <p class="leading-5">
+            Product discovery and building what matters
+          </p>
+        </div>
+
+        <div class="flex gap-3 mt-2">
+          <img src="src/assets/images/icon-list.svg" alt="icono-lista" class="self-start">
+          <p class="leading-5">
+            Measuring to ensure updates are a success
+          </p>
+        </div>
+
+        <div class="flex gap-3 mt-2">
+          <img src="src/assets/images/icon-list.svg" alt="icono-lista" class="self-start">
+          <p>
+            And much more!
+          </p>
+        </div>
+      </div>
+
+      <form id="formulario" novalidate class="my-7">
+        <div class="flex flex-col gap-1">
+          <label id="label-email" for="email" class="text-charcoal-grey text-xs font-bold relative">Email address</label>
+          <input type="email" id="email" name="email" placeholder="email@company.com" class="border-2 border-grey-hsl rounded-md py-3 px-4 focus:outline-none">
+        </div>
+
+        <button type="submit" class="boton mt-4 py-3 px-5 text-center text-white bg-dark-slate-grey w-full rounded-md transition-[linear-gradient] duration-300">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer class="attribution text-center md:mt-10 md:text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-grey-hsl font-bold">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/jorgecb10" class="text-grey-hsl font-bold">Jorge Carranza</a>.
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
