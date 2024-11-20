@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alerta.textContent = mensaje
             referencia.appendChild(alerta)
 
+            emailInput.classList.remove('border-grey-hsl')
             emailInput.classList.add('border-[rgb(255,96,62)]', 'text-[rgb(255,96,62)]', 'bg-[#ffe8e6]')
         }
 
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const alerta = referencia.querySelector('.alerta')
             if(alerta) {
                 emailInput.classList.remove('border-[rgb(255,96,62)]', 'text-[rgb(255,96,62)]', 'bg-[#ffe8e6]')
+                emailInput.classList.add('border-grey-hsl')
                 alerta.remove()
             }
         }
